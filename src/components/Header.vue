@@ -36,7 +36,7 @@ export default {
   beforeMount() {
     alert('页面挂载前，此时页面依然是空白的，这时render函数被首次调用')
   },
-  created() {
+  mounted() {
     alert('页面已经挂载了，这时你可以看到页面的内容，也可以访问到dom')
   },
   beforeUpdate() {
