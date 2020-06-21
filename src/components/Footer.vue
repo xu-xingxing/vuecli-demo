@@ -1,11 +1,16 @@
 <template>
   <div id="footer">
-    <p>@{{ copy_right }}</p>
+    <p>{{ title }}@{{ copy_right }}</p>
   </div>
 </template>
 
 <script>
 export default {
+  props: {
+    title: {
+      type: String
+    }
+  },
   data() {
     return {
       copy_right: '2020年vueDemo'
